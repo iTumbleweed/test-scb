@@ -10,4 +10,7 @@
 
 @interface CityListViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *cityTable;
+@property (weak, nonatomic) IBOutlet UIButton *addNewCityButton;
+
 @end

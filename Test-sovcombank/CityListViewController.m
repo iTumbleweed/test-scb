@@ -7,6 +7,8 @@
 //
 
 #import "CityListViewController.h"
+#import "StyleGuide.h"
+#import "AddNewCityViewController.h"
 
 @interface CityListViewController ()
 
@@ -14,12 +16,16 @@
 
 @implementation CityListViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    [self.addNewCityButton setBackgroundColor:[StyleGuide baseColor]];
+    [self.addNewCityButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -33,5 +39,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)openNewCityViewController:(id)sender
+{
+    AddNewCityViewController* ancvc = [self.storyboard instantiateViewControllerWithIdentifier:@"AddNewCityViewController"];
+    //ancvc.delegate = self;
+    [self presentViewController:ancvc animated:YES completion:nil];
+}
 
 @end

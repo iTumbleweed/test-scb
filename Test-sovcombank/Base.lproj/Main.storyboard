@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--City List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CityListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,24 +22,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hfj-8y-EUn">
-                                <rect key="frame" x="0.0" y="28" width="375" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hfj-8y-EUn">
+                                <rect key="frame" x="0.0" y="28" width="375" height="560"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-EY-UVW">
-                                <rect key="frame" x="0.0" y="604" width="375" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-EY-UVW">
+                                <rect key="frame" x="21" y="596" width="333" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="q4r-15-BwO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Добавить город"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openNewCityViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2J-O9-mST"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NPR-EY-UVW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="AaF-2l-b0A"/>
+                            <constraint firstItem="hfj-8y-EUn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BuX-Zf-Mbc"/>
+                            <constraint firstItem="NPR-EY-UVW" firstAttribute="top" secondItem="hfj-8y-EUn" secondAttribute="bottom" constant="8" id="WAD-xp-yXZ"/>
+                            <constraint firstAttribute="trailing" secondItem="hfj-8y-EUn" secondAttribute="trailing" id="ZXR-5P-pE9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NPR-EY-UVW" secondAttribute="bottom" constant="5" id="aHO-um-cMX"/>
+                            <constraint firstItem="hfj-8y-EUn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="qGV-ib-CU8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NPR-EY-UVW" secondAttribute="trailing" constant="5" id="rUb-Ub-Fq8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addNewCityButton" destination="NPR-EY-UVW" id="SpB-gE-XLh"/>
+                        <outlet property="cityTable" destination="hfj-8y-EUn" id="7Oc-pr-Jtx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Add New City View Controller-->
+        <scene sceneID="h1A-WL-SG0">
+            <objects>
+                <viewController storyboardIdentifier="AddNewCityViewController" id="V4d-7y-aEj" customClass="AddNewCityViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I0I-Ql-ewp"/>
+                        <viewControllerLayoutGuide type="bottom" id="y9G-Ea-FgB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aqZ-we-cG7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7l-IP-FFe" customClass="MVPlaceSearchTextField">
+                                <rect key="frame" x="16" y="76" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="V4d-7y-aEj" id="iza-xX-OKo"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityNameAutocompleteField" destination="b7l-IP-FFe" id="X0G-7e-nsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oin-Ib-azB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.79999999999995" y="125.4872563718141"/>
         </scene>
     </scenes>
 </document>

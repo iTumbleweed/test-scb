@@ -17,6 +17,14 @@
 		4425D5A11E32291E003F2635 /* Test_sovcombankUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5A01E32291E003F2635 /* Test_sovcombankUITests.m */; };
 		4425D5B01E322B7A003F2635 /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5AF1E322B7A003F2635 /* CityListViewController.m */; };
 		4425D5B51E322C33003F2635 /* StyleGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5B41E322C33003F2635 /* StyleGuide.m */; };
+		4425D5BA1E32377B003F2635 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5B91E32377B003F2635 /* City.m */; };
+		4425D5BD1E3239FC003F2635 /* AddNewCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5BC1E3239FC003F2635 /* AddNewCityViewController.m */; };
+		4425D5C11E323A24003F2635 /* CityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5C01E323A24003F2635 /* CityDetailViewController.m */; };
+		4425D5E51E324AEB003F2635 /* MLPAutoCompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5D91E324AEB003F2635 /* MLPAutoCompleteTextField.m */; };
+		4425D5E61E324AEB003F2635 /* NSString+Levenshtein.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5DE1E324AEB003F2635 /* NSString+Levenshtein.m */; };
+		4425D5E71E324AEB003F2635 /* MVPlaceSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5E01E324AEB003F2635 /* MVPlaceSearchTextField.m */; };
+		4425D5E81E324AEB003F2635 /* PlaceDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5E21E324AEB003F2635 /* PlaceDetail.m */; };
+		4425D5E91E324AEB003F2635 /* PlaceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5E41E324AEB003F2635 /* PlaceObject.m */; };
 		78477786BC31BD2EEE64C2C9 /* libPods-Test-sovcombankUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1A4BFD04F671B417A8043B /* libPods-Test-sovcombankUITests.a */; };
 		EA622AE5BFEEB5DC24AEA409 /* libPods-Test-sovcombankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0833B05CF19E4551DF493AF /* libPods-Test-sovcombankTests.a */; };
 		F2EF6D8685CAA4F3074BA243 /* libPods-Test-sovcombank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D61A25F5A8CC52F16E8611 /* libPods-Test-sovcombank.a */; };
@@ -60,6 +68,25 @@
 		4425D5AF1E322B7A003F2635 /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListViewController.m; sourceTree = "<group>"; };
 		4425D5B31E322C33003F2635 /* StyleGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleGuide.h; sourceTree = "<group>"; };
 		4425D5B41E322C33003F2635 /* StyleGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleGuide.m; sourceTree = "<group>"; };
+		4425D5B81E32377B003F2635 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		4425D5B91E32377B003F2635 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		4425D5BB1E3239FC003F2635 /* AddNewCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewCityViewController.h; sourceTree = "<group>"; };
+		4425D5BC1E3239FC003F2635 /* AddNewCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewCityViewController.m; sourceTree = "<group>"; };
+		4425D5BF1E323A24003F2635 /* CityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDetailViewController.h; sourceTree = "<group>"; };
+		4425D5C01E323A24003F2635 /* CityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDetailViewController.m; sourceTree = "<group>"; };
+		4425D5D81E324AEB003F2635 /* MLPAutoCompleteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompleteTextField.h; sourceTree = "<group>"; };
+		4425D5D91E324AEB003F2635 /* MLPAutoCompleteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPAutoCompleteTextField.m; sourceTree = "<group>"; };
+		4425D5DA1E324AEB003F2635 /* MLPAutoCompleteTextFieldDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompleteTextFieldDataSource.h; sourceTree = "<group>"; };
+		4425D5DB1E324AEB003F2635 /* MLPAutoCompleteTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompleteTextFieldDelegate.h; sourceTree = "<group>"; };
+		4425D5DC1E324AEB003F2635 /* MLPAutoCompletionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompletionObject.h; sourceTree = "<group>"; };
+		4425D5DD1E324AEB003F2635 /* NSString+Levenshtein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Levenshtein.h"; sourceTree = "<group>"; };
+		4425D5DE1E324AEB003F2635 /* NSString+Levenshtein.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Levenshtein.m"; sourceTree = "<group>"; };
+		4425D5DF1E324AEB003F2635 /* MVPlaceSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPlaceSearchTextField.h; sourceTree = "<group>"; };
+		4425D5E01E324AEB003F2635 /* MVPlaceSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPlaceSearchTextField.m; sourceTree = "<group>"; };
+		4425D5E11E324AEB003F2635 /* PlaceDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceDetail.h; sourceTree = "<group>"; };
+		4425D5E21E324AEB003F2635 /* PlaceDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceDetail.m; sourceTree = "<group>"; };
+		4425D5E31E324AEB003F2635 /* PlaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceObject.h; sourceTree = "<group>"; };
+		4425D5E41E324AEB003F2635 /* PlaceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceObject.m; sourceTree = "<group>"; };
 		4B95A36B44169FE563F21E05 /* Pods-Test-sovcombankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankTests/Pods-Test-sovcombankTests.release.xcconfig"; sourceTree = "<group>"; };
 		52B2B8E196C6C84ADC4F2A10 /* Pods-Test-sovcombankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankUITests/Pods-Test-sovcombankUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9598A23EEB75FA777DF67424 /* Pods-Test-sovcombank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombank/Pods-Test-sovcombank.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,12 +150,9 @@
 		4425D5771E32291E003F2635 /* Test-sovcombank */ = {
 			isa = PBXGroup;
 			children = (
+				4425D5B71E32370E003F2635 /* Business logic */,
 				4425D5B21E322C02003F2635 /* Common */,
-				4425D57B1E32291E003F2635 /* AppDelegate.h */,
-				4425D57C1E32291E003F2635 /* AppDelegate.m */,
-				4425D5811E32291E003F2635 /* Main.storyboard */,
 				4425D5871E32291E003F2635 /* Assets.xcassets */,
-				4425D5891E32291E003F2635 /* LaunchScreen.storyboard */,
 				4425D58C1E32291E003F2635 /* Info.plist */,
 				4425D5841E32291E003F2635 /* Test_sovcombank.xcdatamodeld */,
 				4425D5781E32291E003F2635 /* Supporting Files */,
@@ -140,6 +164,8 @@
 		4425D5781E32291E003F2635 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4425D57B1E32291E003F2635 /* AppDelegate.h */,
+				4425D57C1E32291E003F2635 /* AppDelegate.m */,
 				4425D5791E32291E003F2635 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -166,8 +192,10 @@
 		4425D5B11E322B80003F2635 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				4425D5AE1E322B7A003F2635 /* CityListViewController.h */,
-				4425D5AF1E322B7A003F2635 /* CityListViewController.m */,
+				4425D5811E32291E003F2635 /* Main.storyboard */,
+				4425D5891E32291E003F2635 /* LaunchScreen.storyboard */,
+				4425D5D61E324AEB003F2635 /* MVPlaceSearchTextField */,
+				4425D5B61E3233AA003F2635 /* Controllers */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -179,6 +207,56 @@
 				4425D5B41E322C33003F2635 /* StyleGuide.m */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		4425D5B61E3233AA003F2635 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4425D5BB1E3239FC003F2635 /* AddNewCityViewController.h */,
+				4425D5BC1E3239FC003F2635 /* AddNewCityViewController.m */,
+				4425D5BF1E323A24003F2635 /* CityDetailViewController.h */,
+				4425D5C01E323A24003F2635 /* CityDetailViewController.m */,
+				4425D5AE1E322B7A003F2635 /* CityListViewController.h */,
+				4425D5AF1E322B7A003F2635 /* CityListViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4425D5B71E32370E003F2635 /* Business logic */ = {
+			isa = PBXGroup;
+			children = (
+				4425D5B81E32377B003F2635 /* City.h */,
+				4425D5B91E32377B003F2635 /* City.m */,
+			);
+			name = "Business logic";
+			sourceTree = "<group>";
+		};
+		4425D5D61E324AEB003F2635 /* MVPlaceSearchTextField */ = {
+			isa = PBXGroup;
+			children = (
+				4425D5D71E324AEB003F2635 /* MLPAutoCompleteTextField */,
+				4425D5DF1E324AEB003F2635 /* MVPlaceSearchTextField.h */,
+				4425D5E01E324AEB003F2635 /* MVPlaceSearchTextField.m */,
+				4425D5E11E324AEB003F2635 /* PlaceDetail.h */,
+				4425D5E21E324AEB003F2635 /* PlaceDetail.m */,
+				4425D5E31E324AEB003F2635 /* PlaceObject.h */,
+				4425D5E41E324AEB003F2635 /* PlaceObject.m */,
+			);
+			path = MVPlaceSearchTextField;
+			sourceTree = "<group>";
+		};
+		4425D5D71E324AEB003F2635 /* MLPAutoCompleteTextField */ = {
+			isa = PBXGroup;
+			children = (
+				4425D5D81E324AEB003F2635 /* MLPAutoCompleteTextField.h */,
+				4425D5D91E324AEB003F2635 /* MLPAutoCompleteTextField.m */,
+				4425D5DA1E324AEB003F2635 /* MLPAutoCompleteTextFieldDataSource.h */,
+				4425D5DB1E324AEB003F2635 /* MLPAutoCompleteTextFieldDelegate.h */,
+				4425D5DC1E324AEB003F2635 /* MLPAutoCompletionObject.h */,
+				4425D5DD1E324AEB003F2635 /* NSString+Levenshtein.h */,
+				4425D5DE1E324AEB003F2635 /* NSString+Levenshtein.m */,
+			);
+			path = MLPAutoCompleteTextField;
 			sourceTree = "<group>";
 		};
 		C1675101D94ABE369FFA1B1B /* Pods */ = {
@@ -487,8 +565,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4425D5E91E324AEB003F2635 /* PlaceObject.m in Sources */,
+				4425D5E81E324AEB003F2635 /* PlaceDetail.m in Sources */,
+				4425D5E51E324AEB003F2635 /* MLPAutoCompleteTextField.m in Sources */,
+				4425D5E61E324AEB003F2635 /* NSString+Levenshtein.m in Sources */,
+				4425D5C11E323A24003F2635 /* CityDetailViewController.m in Sources */,
+				4425D5BD1E3239FC003F2635 /* AddNewCityViewController.m in Sources */,
 				4425D57D1E32291E003F2635 /* AppDelegate.m in Sources */,
 				4425D5861E32291E003F2635 /* Test_sovcombank.xcdatamodeld in Sources */,
+				4425D5E71E324AEB003F2635 /* MVPlaceSearchTextField.m in Sources */,
+				4425D5BA1E32377B003F2635 /* City.m in Sources */,
 				4425D5B51E322C33003F2635 /* StyleGuide.m in Sources */,
 				4425D57A1E32291E003F2635 /* main.m in Sources */,
 				4425D5B01E322B7A003F2635 /* CityListViewController.m in Sources */,
