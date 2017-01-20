@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		4425D57A1E32291E003F2635 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5791E32291E003F2635 /* main.m */; };
 		4425D57D1E32291E003F2635 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D57C1E32291E003F2635 /* AppDelegate.m */; };
-		4425D5801E32291E003F2635 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D57F1E32291E003F2635 /* ViewController.m */; };
 		4425D5831E32291E003F2635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4425D5811E32291E003F2635 /* Main.storyboard */; };
 		4425D5861E32291E003F2635 /* Test_sovcombank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5841E32291E003F2635 /* Test_sovcombank.xcdatamodeld */; };
 		4425D5881E32291E003F2635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4425D5871E32291E003F2635 /* Assets.xcassets */; };
 		4425D58B1E32291E003F2635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4425D5891E32291E003F2635 /* LaunchScreen.storyboard */; };
 		4425D5961E32291E003F2635 /* Test_sovcombankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5951E32291E003F2635 /* Test_sovcombankTests.m */; };
 		4425D5A11E32291E003F2635 /* Test_sovcombankUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5A01E32291E003F2635 /* Test_sovcombankUITests.m */; };
+		4425D5B01E322B7A003F2635 /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5AF1E322B7A003F2635 /* CityListViewController.m */; };
+		4425D5B51E322C33003F2635 /* StyleGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5B41E322C33003F2635 /* StyleGuide.m */; };
 		78477786BC31BD2EEE64C2C9 /* libPods-Test-sovcombankUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1A4BFD04F671B417A8043B /* libPods-Test-sovcombankUITests.a */; };
 		EA622AE5BFEEB5DC24AEA409 /* libPods-Test-sovcombankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0833B05CF19E4551DF493AF /* libPods-Test-sovcombankTests.a */; };
 		F2EF6D8685CAA4F3074BA243 /* libPods-Test-sovcombank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D61A25F5A8CC52F16E8611 /* libPods-Test-sovcombank.a */; };
@@ -44,8 +45,6 @@
 		4425D5791E32291E003F2635 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4425D57B1E32291E003F2635 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4425D57C1E32291E003F2635 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4425D57E1E32291E003F2635 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4425D57F1E32291E003F2635 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4425D5821E32291E003F2635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4425D5851E32291E003F2635 /* Test_sovcombank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test_sovcombank.xcdatamodel; sourceTree = "<group>"; };
 		4425D5871E32291E003F2635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +56,10 @@
 		4425D59C1E32291E003F2635 /* Test-sovcombankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-sovcombankUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4425D5A01E32291E003F2635 /* Test_sovcombankUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_sovcombankUITests.m; sourceTree = "<group>"; };
 		4425D5A21E32291E003F2635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4425D5AE1E322B7A003F2635 /* CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListViewController.h; sourceTree = "<group>"; };
+		4425D5AF1E322B7A003F2635 /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListViewController.m; sourceTree = "<group>"; };
+		4425D5B31E322C33003F2635 /* StyleGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleGuide.h; sourceTree = "<group>"; };
+		4425D5B41E322C33003F2635 /* StyleGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleGuide.m; sourceTree = "<group>"; };
 		4B95A36B44169FE563F21E05 /* Pods-Test-sovcombankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankTests/Pods-Test-sovcombankTests.release.xcconfig"; sourceTree = "<group>"; };
 		52B2B8E196C6C84ADC4F2A10 /* Pods-Test-sovcombankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankUITests/Pods-Test-sovcombankUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9598A23EEB75FA777DF67424 /* Pods-Test-sovcombank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombank/Pods-Test-sovcombank.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,16 +123,16 @@
 		4425D5771E32291E003F2635 /* Test-sovcombank */ = {
 			isa = PBXGroup;
 			children = (
+				4425D5B21E322C02003F2635 /* Common */,
 				4425D57B1E32291E003F2635 /* AppDelegate.h */,
 				4425D57C1E32291E003F2635 /* AppDelegate.m */,
-				4425D57E1E32291E003F2635 /* ViewController.h */,
-				4425D57F1E32291E003F2635 /* ViewController.m */,
 				4425D5811E32291E003F2635 /* Main.storyboard */,
 				4425D5871E32291E003F2635 /* Assets.xcassets */,
 				4425D5891E32291E003F2635 /* LaunchScreen.storyboard */,
 				4425D58C1E32291E003F2635 /* Info.plist */,
 				4425D5841E32291E003F2635 /* Test_sovcombank.xcdatamodeld */,
 				4425D5781E32291E003F2635 /* Supporting Files */,
+				4425D5B11E322B80003F2635 /* UI */,
 			);
 			path = "Test-sovcombank";
 			sourceTree = "<group>";
@@ -158,6 +161,24 @@
 				4425D5A21E32291E003F2635 /* Info.plist */,
 			);
 			path = "Test-sovcombankUITests";
+			sourceTree = "<group>";
+		};
+		4425D5B11E322B80003F2635 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4425D5AE1E322B7A003F2635 /* CityListViewController.h */,
+				4425D5AF1E322B7A003F2635 /* CityListViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		4425D5B21E322C02003F2635 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4425D5B31E322C33003F2635 /* StyleGuide.h */,
+				4425D5B41E322C33003F2635 /* StyleGuide.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		C1675101D94ABE369FFA1B1B /* Pods */ = {
@@ -466,10 +487,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4425D5801E32291E003F2635 /* ViewController.m in Sources */,
 				4425D57D1E32291E003F2635 /* AppDelegate.m in Sources */,
 				4425D5861E32291E003F2635 /* Test_sovcombank.xcdatamodeld in Sources */,
+				4425D5B51E322C33003F2635 /* StyleGuide.m in Sources */,
 				4425D57A1E32291E003F2635 /* main.m in Sources */,
+				4425D5B01E322B7A003F2635 /* CityListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +737,7 @@
 				4425D5A71E32291E003F2635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4425D5A81E32291E003F2635 /* Build configuration list for PBXNativeTarget "Test-sovcombankTests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +746,7 @@
 				4425D5AA1E32291E003F2635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4425D5AB1E32291E003F2635 /* Build configuration list for PBXNativeTarget "Test-sovcombankUITests" */ = {
 			isa = XCConfigurationList;
@@ -731,6 +755,7 @@
 				4425D5AD1E32291E003F2635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
