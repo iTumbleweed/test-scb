@@ -16,6 +16,9 @@
 		4425D58B1E32291E003F2635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4425D5891E32291E003F2635 /* LaunchScreen.storyboard */; };
 		4425D5961E32291E003F2635 /* Test_sovcombankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5951E32291E003F2635 /* Test_sovcombankTests.m */; };
 		4425D5A11E32291E003F2635 /* Test_sovcombankUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5A01E32291E003F2635 /* Test_sovcombankUITests.m */; };
+		78477786BC31BD2EEE64C2C9 /* libPods-Test-sovcombankUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1A4BFD04F671B417A8043B /* libPods-Test-sovcombankUITests.a */; };
+		EA622AE5BFEEB5DC24AEA409 /* libPods-Test-sovcombankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0833B05CF19E4551DF493AF /* libPods-Test-sovcombankTests.a */; };
+		F2EF6D8685CAA4F3074BA243 /* libPods-Test-sovcombank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D61A25F5A8CC52F16E8611 /* libPods-Test-sovcombank.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28DA4150E426B1536C2E4DAC /* Pods-Test-sovcombankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankTests/Pods-Test-sovcombankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4425D5751E32291E003F2635 /* Test-sovcombank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-sovcombank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4425D5791E32291E003F2635 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4425D57B1E32291E003F2635 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +57,14 @@
 		4425D59C1E32291E003F2635 /* Test-sovcombankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-sovcombankUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4425D5A01E32291E003F2635 /* Test_sovcombankUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_sovcombankUITests.m; sourceTree = "<group>"; };
 		4425D5A21E32291E003F2635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B95A36B44169FE563F21E05 /* Pods-Test-sovcombankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankTests/Pods-Test-sovcombankTests.release.xcconfig"; sourceTree = "<group>"; };
+		52B2B8E196C6C84ADC4F2A10 /* Pods-Test-sovcombankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankUITests/Pods-Test-sovcombankUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9598A23EEB75FA777DF67424 /* Pods-Test-sovcombank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombank/Pods-Test-sovcombank.release.xcconfig"; sourceTree = "<group>"; };
+		AE1A4BFD04F671B417A8043B /* libPods-Test-sovcombankUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test-sovcombankUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DE89A7FE60CF8E2AD7873D /* Pods-Test-sovcombank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombank/Pods-Test-sovcombank.debug.xcconfig"; sourceTree = "<group>"; };
+		D2E668A689B49DE2304A2077 /* Pods-Test-sovcombankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankUITests/Pods-Test-sovcombankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0833B05CF19E4551DF493AF /* libPods-Test-sovcombankTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test-sovcombankTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D61A25F5A8CC52F16E8611 /* libPods-Test-sovcombank.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test-sovcombank.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2EF6D8685CAA4F3074BA243 /* libPods-Test-sovcombank.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA622AE5BFEEB5DC24AEA409 /* libPods-Test-sovcombankTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78477786BC31BD2EEE64C2C9 /* libPods-Test-sovcombankUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,8 @@
 				4425D5941E32291E003F2635 /* Test-sovcombankTests */,
 				4425D59F1E32291E003F2635 /* Test-sovcombankUITests */,
 				4425D5761E32291E003F2635 /* Products */,
+				C1675101D94ABE369FFA1B1B /* Pods */,
+				DD9CECE124E145D2AAB90DF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +160,29 @@
 			path = "Test-sovcombankUITests";
 			sourceTree = "<group>";
 		};
+		C1675101D94ABE369FFA1B1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2DE89A7FE60CF8E2AD7873D /* Pods-Test-sovcombank.debug.xcconfig */,
+				9598A23EEB75FA777DF67424 /* Pods-Test-sovcombank.release.xcconfig */,
+				28DA4150E426B1536C2E4DAC /* Pods-Test-sovcombankTests.debug.xcconfig */,
+				4B95A36B44169FE563F21E05 /* Pods-Test-sovcombankTests.release.xcconfig */,
+				D2E668A689B49DE2304A2077 /* Pods-Test-sovcombankUITests.debug.xcconfig */,
+				52B2B8E196C6C84ADC4F2A10 /* Pods-Test-sovcombankUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD9CECE124E145D2AAB90DF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3D61A25F5A8CC52F16E8611 /* libPods-Test-sovcombank.a */,
+				E0833B05CF19E4551DF493AF /* libPods-Test-sovcombankTests.a */,
+				AE1A4BFD04F671B417A8043B /* libPods-Test-sovcombankUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4425D5A51E32291E003F2635 /* Build configuration list for PBXNativeTarget "Test-sovcombank" */;
 			buildPhases = (
+				9D4324A21F03D80A93E74A06 /* [CP] Check Pods Manifest.lock */,
 				4425D5711E32291E003F2635 /* Sources */,
 				4425D5721E32291E003F2635 /* Frameworks */,
 				4425D5731E32291E003F2635 /* Resources */,
+				CE047012298AC3601CB385B4 /* [CP] Embed Pods Frameworks */,
+				2DC3763E49E6173F26986D4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4425D5A81E32291E003F2635 /* Build configuration list for PBXNativeTarget "Test-sovcombankTests" */;
 			buildPhases = (
+				276461FE85D963856A333229 /* [CP] Check Pods Manifest.lock */,
 				4425D58D1E32291E003F2635 /* Sources */,
 				4425D58E1E32291E003F2635 /* Frameworks */,
 				4425D58F1E32291E003F2635 /* Resources */,
+				02927C3A162E3233F8058602 /* [CP] Embed Pods Frameworks */,
+				F2E2259E07EE795617A07065 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4425D5AB1E32291E003F2635 /* Build configuration list for PBXNativeTarget "Test-sovcombankUITests" */;
 			buildPhases = (
+				A9B580BDC52A024CBF008B94 /* [CP] Check Pods Manifest.lock */,
 				4425D5981E32291E003F2635 /* Sources */,
 				4425D5991E32291E003F2635 /* Frameworks */,
 				4425D59A1E32291E003F2635 /* Resources */,
+				B8CC9BB05E5259E86A2EAB37 /* [CP] Embed Pods Frameworks */,
+				7BD9199F09A265702340192C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,6 +322,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02927C3A162E3233F8058602 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test-sovcombankTests/Pods-Test-sovcombankTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		276461FE85D963856A333229 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2DC3763E49E6173F26986D4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test-sovcombank/Pods-Test-sovcombank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BD9199F09A265702340192C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test-sovcombankUITests/Pods-Test-sovcombankUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D4324A21F03D80A93E74A06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9B580BDC52A024CBF008B94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8CC9BB05E5259E86A2EAB37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test-sovcombankUITests/Pods-Test-sovcombankUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE047012298AC3601CB385B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test-sovcombank/Pods-Test-sovcombank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E2259E07EE795617A07065 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test-sovcombankTests/Pods-Test-sovcombankTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4425D5711E32291E003F2635 /* Sources */ = {
@@ -429,10 +616,12 @@
 		};
 		4425D5A61E32291E003F2635 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2DE89A7FE60CF8E2AD7873D /* Pods-Test-sovcombank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9C5T6WVXX;
 				INFOPLIST_FILE = "Test-sovcombank/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ra.Test-sovcombank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,10 +630,12 @@
 		};
 		4425D5A71E32291E003F2635 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9598A23EEB75FA777DF67424 /* Pods-Test-sovcombank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9C5T6WVXX;
 				INFOPLIST_FILE = "Test-sovcombank/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ra.Test-sovcombank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,6 +644,7 @@
 		};
 		4425D5A91E32291E003F2635 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DA4150E426B1536C2E4DAC /* Pods-Test-sovcombankTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = G9C5T6WVXX;
@@ -466,6 +658,7 @@
 		};
 		4425D5AA1E32291E003F2635 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B95A36B44169FE563F21E05 /* Pods-Test-sovcombankTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = G9C5T6WVXX;
@@ -479,6 +672,7 @@
 		};
 		4425D5AC1E32291E003F2635 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E668A689B49DE2304A2077 /* Pods-Test-sovcombankUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = G9C5T6WVXX;
 				INFOPLIST_FILE = "Test-sovcombankUITests/Info.plist";
@@ -491,6 +685,7 @@
 		};
 		4425D5AD1E32291E003F2635 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B2B8E196C6C84ADC4F2A10 /* Pods-Test-sovcombankUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = G9C5T6WVXX;
 				INFOPLIST_FILE = "Test-sovcombankUITests/Info.plist";
