@@ -17,7 +17,6 @@
 		4425D5A11E32291E003F2635 /* Test_sovcombankUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5A01E32291E003F2635 /* Test_sovcombankUITests.m */; };
 		4425D5B01E322B7A003F2635 /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5AF1E322B7A003F2635 /* CityListViewController.m */; };
 		4425D5B51E322C33003F2635 /* StyleGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5B41E322C33003F2635 /* StyleGuide.m */; };
-		4425D5BA1E32377B003F2635 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5B91E32377B003F2635 /* City.m */; };
 		4425D5BD1E3239FC003F2635 /* AddNewCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5BC1E3239FC003F2635 /* AddNewCityViewController.m */; };
 		4425D5C11E323A24003F2635 /* CityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5C01E323A24003F2635 /* CityDetailViewController.m */; };
 		4425D5E51E324AEB003F2635 /* MLPAutoCompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5D91E324AEB003F2635 /* MLPAutoCompleteTextField.m */; };
@@ -25,6 +24,10 @@
 		4425D5E71E324AEB003F2635 /* MVPlaceSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5E01E324AEB003F2635 /* MVPlaceSearchTextField.m */; };
 		4425D5E81E324AEB003F2635 /* PlaceDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5E21E324AEB003F2635 /* PlaceDetail.m */; };
 		4425D5E91E324AEB003F2635 /* PlaceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425D5E41E324AEB003F2635 /* PlaceObject.m */; };
+		44AD96261E3265D800530587 /* RoundRectPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AD96251E3265D800530587 /* RoundRectPresentationController.m */; };
+		44AD96291E3265F200530587 /* BounceAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AD96281E3265F200530587 /* BounceAnimationController.m */; };
+		44AD962B1E33E76B00530587 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AD962A1E33E76B00530587 /* CoreData.framework */; };
+		44AD962F1E33F78E00530587 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AD962E1E33F78E00530587 /* DataStore.m */; };
 		78477786BC31BD2EEE64C2C9 /* libPods-Test-sovcombankUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1A4BFD04F671B417A8043B /* libPods-Test-sovcombankUITests.a */; };
 		EA622AE5BFEEB5DC24AEA409 /* libPods-Test-sovcombankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0833B05CF19E4551DF493AF /* libPods-Test-sovcombankTests.a */; };
 		F2EF6D8685CAA4F3074BA243 /* libPods-Test-sovcombank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D61A25F5A8CC52F16E8611 /* libPods-Test-sovcombank.a */; };
@@ -68,8 +71,6 @@
 		4425D5AF1E322B7A003F2635 /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListViewController.m; sourceTree = "<group>"; };
 		4425D5B31E322C33003F2635 /* StyleGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleGuide.h; sourceTree = "<group>"; };
 		4425D5B41E322C33003F2635 /* StyleGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleGuide.m; sourceTree = "<group>"; };
-		4425D5B81E32377B003F2635 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
-		4425D5B91E32377B003F2635 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		4425D5BB1E3239FC003F2635 /* AddNewCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewCityViewController.h; sourceTree = "<group>"; };
 		4425D5BC1E3239FC003F2635 /* AddNewCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewCityViewController.m; sourceTree = "<group>"; };
 		4425D5BF1E323A24003F2635 /* CityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDetailViewController.h; sourceTree = "<group>"; };
@@ -87,6 +88,13 @@
 		4425D5E21E324AEB003F2635 /* PlaceDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceDetail.m; sourceTree = "<group>"; };
 		4425D5E31E324AEB003F2635 /* PlaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceObject.h; sourceTree = "<group>"; };
 		4425D5E41E324AEB003F2635 /* PlaceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceObject.m; sourceTree = "<group>"; };
+		44AD96241E3265D800530587 /* RoundRectPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundRectPresentationController.h; sourceTree = "<group>"; };
+		44AD96251E3265D800530587 /* RoundRectPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundRectPresentationController.m; sourceTree = "<group>"; };
+		44AD96271E3265F200530587 /* BounceAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceAnimationController.h; sourceTree = "<group>"; };
+		44AD96281E3265F200530587 /* BounceAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceAnimationController.m; sourceTree = "<group>"; };
+		44AD962A1E33E76B00530587 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		44AD962D1E33F78E00530587 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		44AD962E1E33F78E00530587 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 		4B95A36B44169FE563F21E05 /* Pods-Test-sovcombankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankTests/Pods-Test-sovcombankTests.release.xcconfig"; sourceTree = "<group>"; };
 		52B2B8E196C6C84ADC4F2A10 /* Pods-Test-sovcombankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankUITests/Pods-Test-sovcombankUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9598A23EEB75FA777DF67424 /* Pods-Test-sovcombank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombank/Pods-Test-sovcombank.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44AD962B1E33E76B00530587 /* CoreData.framework in Frameworks */,
 				F2EF6D8685CAA4F3074BA243 /* libPods-Test-sovcombank.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,12 +159,12 @@
 		4425D5771E32291E003F2635 /* Test-sovcombank */ = {
 			isa = PBXGroup;
 			children = (
-				4425D5B71E32370E003F2635 /* Business logic */,
-				4425D5B21E322C02003F2635 /* Common */,
 				4425D5871E32291E003F2635 /* Assets.xcassets */,
+				4425D5B21E322C02003F2635 /* Common */,
+				44AD962C1E33F77500530587 /* Data store */,
 				4425D58C1E32291E003F2635 /* Info.plist */,
-				4425D5841E32291E003F2635 /* Test_sovcombank.xcdatamodeld */,
 				4425D5781E32291E003F2635 /* Supporting Files */,
+				4425D5841E32291E003F2635 /* Test_sovcombank.xcdatamodeld */,
 				4425D5B11E322B80003F2635 /* UI */,
 			);
 			path = "Test-sovcombank";
@@ -218,17 +227,9 @@
 				4425D5C01E323A24003F2635 /* CityDetailViewController.m */,
 				4425D5AE1E322B7A003F2635 /* CityListViewController.h */,
 				4425D5AF1E322B7A003F2635 /* CityListViewController.m */,
+				44AD96231E32655500530587 /* Presentation */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		4425D5B71E32370E003F2635 /* Business logic */ = {
-			isa = PBXGroup;
-			children = (
-				4425D5B81E32377B003F2635 /* City.h */,
-				4425D5B91E32377B003F2635 /* City.m */,
-			);
-			name = "Business logic";
 			sourceTree = "<group>";
 		};
 		4425D5D61E324AEB003F2635 /* MVPlaceSearchTextField */ = {
@@ -259,6 +260,26 @@
 			path = MLPAutoCompleteTextField;
 			sourceTree = "<group>";
 		};
+		44AD96231E32655500530587 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				44AD96241E3265D800530587 /* RoundRectPresentationController.h */,
+				44AD96251E3265D800530587 /* RoundRectPresentationController.m */,
+				44AD96271E3265F200530587 /* BounceAnimationController.h */,
+				44AD96281E3265F200530587 /* BounceAnimationController.m */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		44AD962C1E33F77500530587 /* Data store */ = {
+			isa = PBXGroup;
+			children = (
+				44AD962D1E33F78E00530587 /* DataStore.h */,
+				44AD962E1E33F78E00530587 /* DataStore.m */,
+			);
+			name = "Data store";
+			sourceTree = "<group>";
+		};
 		C1675101D94ABE369FFA1B1B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +296,7 @@
 		DD9CECE124E145D2AAB90DF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44AD962A1E33E76B00530587 /* CoreData.framework */,
 				F3D61A25F5A8CC52F16E8611 /* libPods-Test-sovcombank.a */,
 				E0833B05CF19E4551DF493AF /* libPods-Test-sovcombankTests.a */,
 				AE1A4BFD04F671B417A8043B /* libPods-Test-sovcombankUITests.a */,
@@ -570,11 +592,13 @@
 				4425D5E51E324AEB003F2635 /* MLPAutoCompleteTextField.m in Sources */,
 				4425D5E61E324AEB003F2635 /* NSString+Levenshtein.m in Sources */,
 				4425D5C11E323A24003F2635 /* CityDetailViewController.m in Sources */,
+				44AD962F1E33F78E00530587 /* DataStore.m in Sources */,
 				4425D5BD1E3239FC003F2635 /* AddNewCityViewController.m in Sources */,
 				4425D57D1E32291E003F2635 /* AppDelegate.m in Sources */,
+				44AD96291E3265F200530587 /* BounceAnimationController.m in Sources */,
 				4425D5861E32291E003F2635 /* Test_sovcombank.xcdatamodeld in Sources */,
 				4425D5E71E324AEB003F2635 /* MVPlaceSearchTextField.m in Sources */,
-				4425D5BA1E32377B003F2635 /* City.m in Sources */,
+				44AD96261E3265D800530587 /* RoundRectPresentationController.m in Sources */,
 				4425D5B51E322C33003F2635 /* StyleGuide.m in Sources */,
 				4425D57A1E32291E003F2635 /* main.m in Sources */,
 				4425D5B01E322B7A003F2635 /* CityListViewController.m in Sources */,

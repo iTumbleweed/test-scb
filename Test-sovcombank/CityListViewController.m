@@ -9,8 +9,11 @@
 #import "CityListViewController.h"
 #import "StyleGuide.h"
 #import "AddNewCityViewController.h"
+#import "DataStore.h"
 
 @interface CityListViewController ()
+
+@property (strong) NSMutableArray *cities;
 
 @end
 
@@ -21,6 +24,8 @@
     [super viewDidLoad];
     [self.addNewCityButton setBackgroundColor:[StyleGuide baseColor]];
     [self.addNewCityButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.listLabel setTextColor:[StyleGuide baseColor]];
+    self.cities = [DataStore getCitiesList];
     // Do any additional setup after loading the view.
 }
 
@@ -40,11 +45,44 @@
 }
 */
 
+-(void)updateCitiesList
+{
+    self.cities = [DataStore getCitiesList];
+    [self.cityTable reloadData];
+}
+
 - (IBAction)openNewCityViewController:(id)sender
 {
     AddNewCityViewController* ancvc = [self.storyboard instantiateViewControllerWithIdentifier:@"AddNewCityViewController"];
-    //ancvc.delegate = self;
+    ancvc.delegate = self;
     [self presentViewController:ancvc animated:YES completion:nil];
+}
+
+#pragma mark - AddNewCity delegate
+
+- (void) didDismissAddNewCityViewController:(UIViewController *)vc
+{
+    [self updateCitiesList];
+}
+
+# pragma mark Table view delegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.cities.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    NSManagedObject *city = [self.cities objectAtIndex:indexPath.row];
+    [cell.textLabel setText:[city valueForKey:@"name"]];
+    return cell;
 }
 
 @end

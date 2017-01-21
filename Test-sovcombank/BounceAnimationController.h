@@ -1,5 +1,5 @@
 //
-//  City.h
+//  BounceAnimationController.h
 //  Test-sovcombank
 //
 //  Created by Ruslan on 20/01/2017.
@@ -7,11 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface City : NSObject
 
-@property NSString* ID;
-@property NSString* name;
-@property NSString* foundationYear;
+@interface BounceAnimationController : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end

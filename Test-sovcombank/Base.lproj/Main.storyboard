@@ -22,9 +22,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hfj-8y-EUn">
-                                <rect key="frame" x="0.0" y="28" width="375" height="560"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hfj-8y-EUn">
+                                <rect key="frame" x="0.0" y="80" width="375" height="511"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="uvF-7X-FVw">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uvF-7X-FVw" id="6Ev-Lf-VHJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="wfL-bw-PDt"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zk4-X4-3v2"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-EY-UVW">
                                 <rect key="frame" x="21" y="596" width="333" height="66"/>
@@ -42,21 +56,30 @@
                                     <action selector="openNewCityViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2J-O9-mST"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Список городов" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t18-vv-31I">
+                                <rect key="frame" x="74" y="30" width="227" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NPR-EY-UVW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="AaF-2l-b0A"/>
                             <constraint firstItem="hfj-8y-EUn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BuX-Zf-Mbc"/>
-                            <constraint firstItem="NPR-EY-UVW" firstAttribute="top" secondItem="hfj-8y-EUn" secondAttribute="bottom" constant="8" id="WAD-xp-yXZ"/>
+                            <constraint firstItem="hfj-8y-EUn" firstAttribute="bottom" secondItem="NPR-EY-UVW" secondAttribute="top" constant="-5" id="WAD-xp-yXZ"/>
                             <constraint firstAttribute="trailing" secondItem="hfj-8y-EUn" secondAttribute="trailing" id="ZXR-5P-pE9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NPR-EY-UVW" secondAttribute="bottom" constant="5" id="aHO-um-cMX"/>
-                            <constraint firstItem="hfj-8y-EUn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="qGV-ib-CU8"/>
+                            <constraint firstItem="hfj-8y-EUn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="qGV-ib-CU8"/>
+                            <constraint firstItem="t18-vv-31I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rHW-DU-tYx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NPR-EY-UVW" secondAttribute="trailing" constant="5" id="rUb-Ub-Fq8"/>
+                            <constraint firstItem="t18-vv-31I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="sTp-zV-MI2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addNewCityButton" destination="NPR-EY-UVW" id="SpB-gE-XLh"/>
                         <outlet property="cityTable" destination="hfj-8y-EUn" id="7Oc-pr-Jtx"/>
+                        <outlet property="listLabel" destination="t18-vv-31I" id="AzD-W4-Vbf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,9 +98,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7l-IP-FFe" customClass="MVPlaceSearchTextField">
-                                <rect key="frame" x="16" y="76" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название города" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7l-IP-FFe" customClass="MVPlaceSearchTextField">
+                                <rect key="frame" x="16" y="136" width="347" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -85,11 +107,84 @@
                                     <outlet property="delegate" destination="V4d-7y-aEj" id="iza-xX-OKo"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyT-Qr-vuD">
+                                <rect key="frame" x="137" y="28" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7pM-bn-ZLh"/>
+                                    <constraint firstAttribute="height" constant="100" id="IN9-zd-EFJ"/>
+                                </constraints>
+                                <state key="normal" title="Фото"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Регион" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9j1-WA-6Zf">
+                                <rect key="frame" x="14" y="177" width="347" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Год основания" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="80s-hI-tD9">
+                                <rect key="frame" x="128" y="215" width="120" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi5-UR-hdO">
+                                <rect key="frame" x="115" y="623" width="144" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="Pot-9d-fBb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Добавить"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="add:" destination="V4d-7y-aEj" eventType="touchUpInside" id="TBt-cf-cCW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nN-4g-Nop">
+                                <rect key="frame" x="333" y="24" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="×"/>
+                                <connections>
+                                    <action selector="closeAddNewCityViewController:" destination="V4d-7y-aEj" eventType="touchUpInside" id="hXQ-dW-g6W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hyT-Qr-vuD" firstAttribute="centerX" secondItem="aqZ-we-cG7" secondAttribute="centerX" id="0FD-pd-mBD"/>
+                            <constraint firstItem="xi5-UR-hdO" firstAttribute="centerX" secondItem="aqZ-we-cG7" secondAttribute="centerX" id="7aP-sH-eiK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b7l-IP-FFe" secondAttribute="trailing" constant="-4" id="EWK-OZ-Zd0"/>
+                            <constraint firstItem="9j1-WA-6Zf" firstAttribute="leading" secondItem="aqZ-we-cG7" secondAttribute="leadingMargin" constant="-2" id="GIn-MR-6IE"/>
+                            <constraint firstItem="80s-hI-tD9" firstAttribute="centerX" secondItem="aqZ-we-cG7" secondAttribute="centerX" id="GdL-VC-POn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2nN-4g-Nop" secondAttribute="trailing" constant="-4" id="UWd-Fx-Jq7"/>
+                            <constraint firstItem="hyT-Qr-vuD" firstAttribute="top" secondItem="I0I-Ql-ewp" secondAttribute="bottom" constant="8" id="WXD-Vo-RAj"/>
+                            <constraint firstItem="9j1-WA-6Zf" firstAttribute="top" secondItem="b7l-IP-FFe" secondAttribute="bottom" constant="11" id="X46-TV-4E1"/>
+                            <constraint firstItem="2nN-4g-Nop" firstAttribute="top" secondItem="I0I-Ql-ewp" secondAttribute="bottom" constant="4" id="ZkN-qv-acK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9j1-WA-6Zf" secondAttribute="trailing" constant="-2" id="bD5-te-m8h"/>
+                            <constraint firstItem="y9G-Ea-FgB" firstAttribute="top" secondItem="xi5-UR-hdO" secondAttribute="bottom" constant="10" id="eXs-y8-Rpv"/>
+                            <constraint firstItem="b7l-IP-FFe" firstAttribute="top" secondItem="hyT-Qr-vuD" secondAttribute="bottom" constant="8" id="geT-zT-ZI5"/>
+                            <constraint firstItem="80s-hI-tD9" firstAttribute="top" secondItem="9j1-WA-6Zf" secondAttribute="bottom" constant="8" id="mq4-5X-wnU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="b7l-IP-FFe" secondAttribute="leading" id="r1X-Y1-hn6"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="cityNameAutocompleteField" destination="b7l-IP-FFe" id="X0G-7e-nsP"/>
+                        <outlet property="addButton" destination="xi5-UR-hdO" id="mbU-E8-86F"/>
+                        <outlet property="addPhotoButton" destination="hyT-Qr-vuD" id="nUG-Pm-oWQ"/>
+                        <outlet property="foundationYear" destination="80s-hI-tD9" id="YIn-el-Yt0"/>
+                        <outlet property="nameField" destination="b7l-IP-FFe" id="LgV-T9-0j6"/>
+                        <outlet property="regionField" destination="9j1-WA-6Zf" id="PBB-8o-dbG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oin-Ib-azB" userLabel="First Responder" sceneMemberID="firstResponder"/>

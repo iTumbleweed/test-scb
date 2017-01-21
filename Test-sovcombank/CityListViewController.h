@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddNewCityViewController.h"
 
-@interface CityListViewController : UIViewController
+@interface CityListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, AddNewCityDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *cityTable;
 @property (weak, nonatomic) IBOutlet UIButton *addNewCityButton;
+@property (weak, nonatomic) IBOutlet UILabel *listLabel;
+
 
 @end
