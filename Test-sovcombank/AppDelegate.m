@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "GooglePlaces/GooglePlaces.h"
+#import "DataStore.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,12 @@
     // Override point for customization after application launch.
     [GMSServices provideAPIKey:@"AIzaSyCi46eAKJV26bF5rxEMOoDO0qUcIAEVxPo"];
     [GMSPlacesClient provideAPIKey:@"AIzaSyBw3o-yM7EwifCRXdoobVTkWQAhklaN_aU"];
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"])
+    {
+        [self addThreeCities];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"HasLaunchedOnce"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
     return YES;
 }
 
@@ -53,6 +60,14 @@
     [self saveContext];
 }
 
+# pragma mark - Add three cities at first launch as per requirements
+
+-(void)addThreeCities
+{
+    [DataStore addCityWithName:@"Казань" region:@"Республика Татарстан" foundationyear:@"1005" image:nil];
+    [DataStore addCityWithName:@"Москва" region:nil foundationyear:@"1147" image:nil];
+    [DataStore addCityWithName:@"Санкт-Петербург" region:nil foundationyear:@"1703" image:nil];
+}
 
 #pragma mark - Core Data stack
 

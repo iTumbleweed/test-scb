@@ -12,6 +12,7 @@
 
 +(NSManagedObjectContext *)getContext
 {
+    // Getting the CoreData context to work with
     AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     NSManagedObjectContext *context = delegate.persistentContainer.viewContext;
     return context;
@@ -30,7 +31,6 @@
     if(![context save:&error]){
         NSLog(@"Can't save! %@ %@", error, [error localizedDescription]);
     }
-    
 }
 
 +(NSMutableArray *)getCitiesList
@@ -39,6 +39,12 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"City"];
     NSMutableArray* cities = [[context executeFetchRequest:fetchRequest error:nil] mutableCopy];
     return cities;
+}
+
++(void)deleteCity:(NSManagedObjectID *)id
+{
+    NSManagedObjectContext *context = [self getContext];
+    [context deleteObject:[context existingObjectWithID:id error:nil]];
 }
 
 @end

@@ -10,11 +10,13 @@
 
 @implementation BounceAnimationController
 
-- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext {
+- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
+{
     return 0.7;
 }
 
-- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
+- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
+{
     UIView *containerView = [transitionContext containerView];
     UIView *presentedView = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view;
     

@@ -12,8 +12,8 @@
 
 @interface DataStore : NSObject
 
-+(NSManagedObjectContext *)getContext;
 +(void)addCityWithName:(NSString *)name region:(NSString *)region foundationyear:(NSString *)foundationyear image:(UIImage *)image;
 +(NSMutableArray *)getCitiesList;
++(void)deleteCity:(NSManagedObjectID *)id;
 
 @end

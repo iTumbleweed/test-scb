@@ -16,7 +16,8 @@
 
 @implementation CityDetailViewController
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
     self = [super initWithCoder:aDecoder];
     if (self) {
         if ([self respondsToSelector:@selector(setTransitioningDelegate:)]) {
@@ -27,29 +28,41 @@
     return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self.nameLabel setText:self.name];
     [self.regionLabel setText:self.region];
-    [self.foundationYearLabel setText:self.foundationYear];
-    [self.coatOfArmsView setImage:self.image];
+    [self.foundationYearLabel setText: [NSString stringWithFormat:@"Год основания: %@", self.foundationYear]];
+    if (self.image)
+    {
+        [self.coatOfArmsView setImage:self.image];
+    }
+    else
+    {
+        [self.coatOfArmsView setImage:[UIImage imageNamed:@"Coats_of_arms_of_None.svg.png"]];
+    }
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
 }
 
-- (IBAction)closeCityDetailViewController:(id)sender {
+- (IBAction)closeCityDetailViewController:(id)sender
+{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - UIViewControllerTransitioningDelegate
 
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
     return [[BounceAnimationController alloc] init];
 }
 
-- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source {
+- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source
+{
     return [[RoundRectPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
 }
 

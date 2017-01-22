@@ -28,6 +28,7 @@
 		44AD96291E3265F200530587 /* BounceAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AD96281E3265F200530587 /* BounceAnimationController.m */; };
 		44AD962B1E33E76B00530587 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AD962A1E33E76B00530587 /* CoreData.framework */; };
 		44AD962F1E33F78E00530587 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AD962E1E33F78E00530587 /* DataStore.m */; };
+		44AD96341E34E34C00530587 /* Coats_of_arms_of_None.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 44AD96331E34E34C00530587 /* Coats_of_arms_of_None.svg.png */; };
 		78477786BC31BD2EEE64C2C9 /* libPods-Test-sovcombankUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1A4BFD04F671B417A8043B /* libPods-Test-sovcombankUITests.a */; };
 		EA622AE5BFEEB5DC24AEA409 /* libPods-Test-sovcombankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0833B05CF19E4551DF493AF /* libPods-Test-sovcombankTests.a */; };
 		F2EF6D8685CAA4F3074BA243 /* libPods-Test-sovcombank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D61A25F5A8CC52F16E8611 /* libPods-Test-sovcombank.a */; };
@@ -95,6 +96,7 @@
 		44AD962A1E33E76B00530587 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		44AD962D1E33F78E00530587 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
 		44AD962E1E33F78E00530587 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
+		44AD96331E34E34C00530587 /* Coats_of_arms_of_None.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coats_of_arms_of_None.svg.png; sourceTree = "<group>"; };
 		4B95A36B44169FE563F21E05 /* Pods-Test-sovcombankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankTests/Pods-Test-sovcombankTests.release.xcconfig"; sourceTree = "<group>"; };
 		52B2B8E196C6C84ADC4F2A10 /* Pods-Test-sovcombankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombankUITests/Pods-Test-sovcombankUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9598A23EEB75FA777DF67424 /* Pods-Test-sovcombank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-sovcombank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-sovcombank/Pods-Test-sovcombank.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,10 +203,11 @@
 		4425D5B11E322B80003F2635 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				4425D5811E32291E003F2635 /* Main.storyboard */,
-				4425D5891E32291E003F2635 /* LaunchScreen.storyboard */,
-				4425D5D61E324AEB003F2635 /* MVPlaceSearchTextField */,
 				4425D5B61E3233AA003F2635 /* Controllers */,
+				44AD96301E34E32500530587 /* Images */,
+				4425D5891E32291E003F2635 /* LaunchScreen.storyboard */,
+				4425D5811E32291E003F2635 /* Main.storyboard */,
+				4425D5D61E324AEB003F2635 /* MVPlaceSearchTextField */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -278,6 +281,14 @@
 				44AD962E1E33F78E00530587 /* DataStore.m */,
 			);
 			name = "Data store";
+			sourceTree = "<group>";
+		};
+		44AD96301E34E32500530587 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				44AD96331E34E34C00530587 /* Coats_of_arms_of_None.svg.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		C1675101D94ABE369FFA1B1B /* Pods */ = {
@@ -423,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4425D58B1E32291E003F2635 /* LaunchScreen.storyboard in Resources */,
+				44AD96341E34E34C00530587 /* Coats_of_arms_of_None.svg.png in Resources */,
 				4425D5881E32291E003F2635 /* Assets.xcassets in Resources */,
 				4425D5831E32291E003F2635 /* Main.storyboard in Resources */,
 			);

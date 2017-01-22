@@ -12,14 +12,15 @@
 #import "StyleGuide.h"
 #import "DataStore.h"
 
-@interface AddNewCityViewController ()<PlaceSearchTextFieldDelegate, UITextFieldDelegate, UIViewControllerTransitioningDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface AddNewCityViewController ()<PlaceSearchTextFieldDelegate, UITextFieldDelegate, UIViewControllerTransitioningDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet MVPlaceSearchTextField *cityNameAutocompleteField;
 
 @end
 
 @implementation AddNewCityViewController
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
     self = [super initWithCoder:aDecoder];
     if (self) {
         if ([self respondsToSelector:@selector(setTransitioningDelegate:)]) {
@@ -45,14 +46,48 @@
 
 - (IBAction)add:(id)sender
 {
-    [DataStore addCityWithName:self.nameField.text region:self.regionField.text foundationyear:self.foundationYear.text image:self.addPhotoButton.currentBackgroundImage];
-    [self closeAddNewCityViewController:self];
+    if (self.nameField.text.length)
+    {
+        [DataStore addCityWithName:self.nameField.text region:self.regionField.text foundationyear:self.foundationYear.text image:self.addPhotoButton.currentBackgroundImage];
+        [self closeAddNewCityViewController:self];
+    }
+    else
+    {
+        [self displayEmptyNameAlert];
+    }
 }
 
 - (IBAction)closeAddNewCityViewController:(id)sender
 {
     [self.delegate didDismissAddNewCityViewController:self];
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void) displayEmptyNameAlert
+{
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@"Не введено название города"
+                                  message:@"Для сохранения города необходимо ввести хотя бы его название."
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* ok = [UIAlertAction
+                         actionWithTitle:@"OK"
+                         style:UIAlertActionStyleDefault
+                         handler:^(UIAlertAction * action)
+                         {
+                             
+                         }];
+    
+    [alert addAction:ok];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+#pragma mark - Text field delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
 }
 
 #pragma mark - Image picker delegate
@@ -67,7 +102,8 @@
     [self presentViewController:picker animated:YES completion:NULL];
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info {
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info
+{
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
     [self.addPhotoButton setBackgroundImage:chosenImage forState:UIControlStateNormal];
     
@@ -91,6 +127,7 @@
 {
     
 }
+
 -(void)placeSearch:(MVPlaceSearchTextField*)textField ResultCell:(UITableViewCell*)cell withPlaceObject:(PlaceObject*)placeObject atIndex:(NSInteger)index{
     if(index%2==0){
         cell.contentView.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];

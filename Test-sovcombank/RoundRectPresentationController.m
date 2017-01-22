@@ -16,7 +16,8 @@
 
 @implementation RoundRectPresentationController
 
-- (UIView *)dimmingView {
+- (UIView *)dimmingView
+{
     static UIView *instance = nil;
     if (instance == nil) {
         instance = [[UIView alloc] initWithFrame:self.containerView.bounds];
@@ -25,7 +26,8 @@
     return instance;
 }
 
-- (void)presentationTransitionWillBegin {
+- (void)presentationTransitionWillBegin
+{
     UIView *presentedView = self.presentedViewController.view;
     presentedView.layer.cornerRadius = 20.f;
     presentedView.layer.shadowColor = [[UIColor blackColor] CGColor];
@@ -37,7 +39,8 @@
     self.dimmingView.alpha = 0;
     [self.containerView addSubview:self.dimmingView];
     
-    [self.presentedViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+    [self.presentedViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context)
+    {
         self.dimmingView.alpha = 1;
     } completion:nil];
 }
@@ -48,19 +51,23 @@
     }
 }
 
-- (void)dismissalTransitionWillBegin {
-    [self.presentedViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+- (void)dismissalTransitionWillBegin
+{
+    [self.presentedViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context)
+    {
         self.dimmingView.alpha = 0;
     } completion:nil];
 }
 
-- (void)dismissalTransitionDidEnd:(BOOL)completed {
+- (void)dismissalTransitionDidEnd:(BOOL)completed
+{
     if (completed) {
         [self.dimmingView removeFromSuperview];
     }
 }
 
-- (CGRect)frameOfPresentedViewInContainerView {
+- (CGRect)frameOfPresentedViewInContainerView
+{
     CGFloat size = 300;
     CGRect frame = CGRectMake((self.containerView.frame.size.width - size) / 2,
                               (self.containerView.frame.size.height - size) / 6,
@@ -68,7 +75,8 @@
     return frame;
 }
 
-- (void)containerViewWillLayoutSubviews {
+- (void)containerViewWillLayoutSubviews
+{
     self.dimmingView.frame = self.containerView.bounds;
     self.presentedView.frame = [self frameOfPresentedViewInContainerView];
 }

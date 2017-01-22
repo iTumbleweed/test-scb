@@ -29,13 +29,11 @@
     [self.addNewCityButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.listLabel setTextColor:[StyleGuide baseColor]];
     self.cities = [DataStore getCitiesList];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(void)updateCitiesList
@@ -51,14 +49,14 @@
     [self presentViewController:ancvc animated:YES completion:nil];
 }
 
-#pragma mark - AddNewCity delegate
+# pragma mark - AddNewCity delegate
 
 - (void) didDismissAddNewCityViewController:(UIViewController *)vc
 {
     [self updateCitiesList];
 }
 
-# pragma mark Table view delegate
+# pragma mark - Table view delegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -86,8 +84,22 @@
     cdvc.name = [city valueForKey:@"name"];
     cdvc.region = [city valueForKey:@"region"];
     cdvc.foundationYear = [city valueForKey:@"foundationyear"];
-    NSLog(@"Image: %@", [city valueForKey:@"image"]);
     [self presentViewController:cdvc animated:YES completion:nil];
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSManagedObject *city = [self.cities objectAtIndex:indexPath.row];
+        NSManagedObjectID *id = (NSManagedObjectID *)[city valueForKey:@"objectID"];
+        [DataStore deleteCity:id];
+        [self updateCitiesList];
+    }
 }
 
 @end
