@@ -64,9 +64,9 @@
 
 -(void)addThreeCities
 {
-    [DataStore addCityWithName:@"Казань" region:@"Республика Татарстан" foundationyear:@"1005" image:nil];
-    [DataStore addCityWithName:@"Москва" region:nil foundationyear:@"1147" image:nil];
-    [DataStore addCityWithName:@"Санкт-Петербург" region:nil foundationyear:@"1703" image:nil];
+    [DataStore addCityWithName:@"Казань" region:@"Республика Татарстан" foundationyear:@"1005" image:[UIImage imageNamed:@"coat_of_arms_kzn.png"]];
+    [DataStore addCityWithName:@"Москва" region:nil foundationyear:@"1147" image:[UIImage imageNamed:@"coat_of_arms_msc.png"]];
+    [DataStore addCityWithName:@"Санкт-Петербург" region:nil foundationyear:@"1703" image:[UIImage imageNamed:@"coat_of_arms_spb.png"]];
 }
 
 #pragma mark - Core Data stack
