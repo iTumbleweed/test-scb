@@ -19,10 +19,9 @@
 
 +(void)addCityWithName:(NSString *)name region:(NSString *)region foundationyear:(NSString *)foundationyear image:(UIImage *)image
 {
-    
     NSManagedObjectContext *context = [self getContext];
     NSManagedObject *newCity = [NSEntityDescription insertNewObjectForEntityForName:@"City" inManagedObjectContext:context];
-    NSData *imageData = UIImagePNGRepresentation(image);
+    NSData *imageData = UIImageJPEGRepresentation(image, 1);
     [newCity setValue:name forKey:@"name"];
     [newCity setValue:region forKey:@"region"];
     [newCity setValue:foundationyear forKey:@"foundationyear"];
@@ -30,9 +29,6 @@
     NSError *error = nil;
     if(![context save:&error]){
         NSLog(@"Can't save! %@ %@", error, [error localizedDescription]);
-    }
-    else{
-        NSLog(@"Success!");
     }
     
 }

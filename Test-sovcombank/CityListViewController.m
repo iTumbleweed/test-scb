@@ -9,7 +9,10 @@
 #import "CityListViewController.h"
 #import "StyleGuide.h"
 #import "AddNewCityViewController.h"
+#import "CityDetailViewController.h"
 #import "DataStore.h"
+#import "BounceAnimationController.h"
+#import "RoundRectPresentationController.h"
 
 @interface CityListViewController ()
 
@@ -34,16 +37,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 -(void)updateCitiesList
 {
@@ -83,6 +76,18 @@
     NSManagedObject *city = [self.cities objectAtIndex:indexPath.row];
     [cell.textLabel setText:[city valueForKey:@"name"]];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSManagedObject *city = [self.cities objectAtIndex:indexPath.row];
+    CityDetailViewController *cdvc = [self.storyboard instantiateViewControllerWithIdentifier:@"CityDetailViewController"];
+    cdvc.image = [UIImage imageWithData:[city valueForKey:@"image"]];
+    cdvc.name = [city valueForKey:@"name"];
+    cdvc.region = [city valueForKey:@"region"];
+    cdvc.foundationYear = [city valueForKey:@"foundationyear"];
+    NSLog(@"Image: %@", [city valueForKey:@"image"]);
+    [self presentViewController:cdvc animated:YES completion:nil];
 }
 
 @end
